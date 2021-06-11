@@ -10,7 +10,7 @@ class Country extends Model
         return $this->belongsTo(Address::class);
     }
 
-    public function province(){
+    public function provinces(){
         return $this->hasMany(Province::class);
     }
 }

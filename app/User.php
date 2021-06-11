@@ -31,11 +31,11 @@ class User extends Authenticatable
         return $this.hasOne(Profile::class);
     }
 
-    public function address(){
+    public function addresses(){
         return $this.hasMany(Address::class);
     }
 
-    public function contact(){
+    public function contacts(){
         return $this.hasMany(Contact::class);
     }
 }

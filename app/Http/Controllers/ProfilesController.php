@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class ProfilesController extends Controller
 {
-    public function index($user){
+    public function create(){
         
         dd(User::find($user));
         dd($user);
-        return view('profile');
+        return view('profiles.create');
     }
 }

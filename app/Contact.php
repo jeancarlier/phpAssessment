@@ -10,7 +10,7 @@ class Contact extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function contactType(){
+    public function contactTypes(){
         return $this.hasMany(ContactType::class);
     }
 }
